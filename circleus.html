@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circular logo for Bleap Us</title>
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #000203;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+        }
+         /* .container h3{
+            position: fixed;
+            top: 18rem;
+            left: 27em;
+            font-size: 1.5rem;
+            color: red; 
+        } */
+             #circ{
+            font-size: 3vmin;
+             background-color: red; 
+            font-family: 'cousine',monospace;
+            text-transform: uppercase; 
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 195px;
+            height: 200px;
+            animation: spin 14s linear infinite;
+            color:whitesmoke; 
+        } 
+        @keyframes spin{
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        } 
+
+        .inside{
+            position: absolute;
+            top: 1.6rem;
+            left: 21.5px;
+            border: 2px solid white;
+            background-color: black;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+        #circ{
+            background-image: linear-gradient(rgb(250, 57, 57), rgb(245, 40, 118));        }
+
+        .pic{
+            position: absolute;
+            top: 2rem;
+            right: 8px;
+        
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+    <dic class="container">  
+        <div id="circ">
+            Contact us  Contact us Contact us  Contact us         
+        </div>
+    <div class="inside">
+        <div class="pic">
+            <img src="/circle us/logobleap.svg" alt="">
+
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+
+    <script>
+        let circ = new CircleType(document.getElementById('circ'));
+        circ.raduis(360);
+    </script>
+</body>
+</html>
+</body>
+</html>
